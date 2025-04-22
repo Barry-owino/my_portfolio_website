@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import ComingSoonView, UserProfileView, ProjectistCreateView, ProjectDetailView, ContactMessageCreateView
+from .views import ComingSoonView, UserProfileView, ProjectListCreateView, ProjectDetailView, ContactMessageCreateView
 
 urlpatterns = [
     path('', ComingSoonView.as_view(), name='coming-soon'),

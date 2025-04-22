@@ -6,7 +6,7 @@ from .serializers import UserProfileSerializer, ProjectSerializer, ContactMessag
 
 # Create your views here.
 class ComingSoonView(TemplateView):
-    template_name = 'main_app/coming_soon.html'
+    template_name = 'main_app/base.html'
 
 
 class UserProfileView(generics.ListAPIView):
