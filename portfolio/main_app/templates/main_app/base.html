@@ -2,104 +2,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barry Obonyo | Software Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barry | Software Developer</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Barry Obonyo</h1>
-      <ul class="flex space-x-6 text-sm font-medium">
-        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="py-20 bg-blue-50">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-4">Hi, I’m Barry 👋</h2>
-      <p class="text-lg max-w-xl mx-auto">
-        A software developer building backend systems with Django, APIs, and modern web tools. Let's bring your idea to life with code.
-      </p>
-      <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700">
-        View My Work
-      </a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-white">
-    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 px-4 max-w-6xl">
-      
-      <!-- Profile Image -->
-      <div class="w-full md:w-1/3">
-        <img src="{% static 'main_app/images/barry.jpg' %}" alt="Barry Obonyo" class="rounded-2xl shadow-md w-full object-cover">
-      </div>
-
-      <!-- Text Content -->
-      <div class="w-full md:w-2/3 text-center md:text-left">
-        <h3 class="text-3xl font-semibold mb-4">About Me</h3>
-        <p class="text-gray-700 leading-relaxed mb-4">
-          I’m Barry, a passionate software developer with a strong focus on backend development using Django and Python.
-          I enjoy solving real-world problems, designing scalable solutions, and turning ideas into working systems.
-        </p>
-        <p class="text-gray-700 mb-6">
-          I’m experienced in building APIs, working with databases, and delivering clean code for web platforms.
-          Outside tech, I enjoy traveling, design, and personal growth.
-        </p>
-
-        <!-- Social Links -->
-        <div class="flex justify-center md:justify-start space-x-6 text-gray-700 text-xl">
-          <a href="https://github.com/yourusername" target="_blank" class="hover:text-black">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-blue-600">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://twitter.com/yourusername" target="_blank" class="hover:text-blue-400">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="mailto:youremail@example.com" class="hover:text-yellow-600">
-            <i class="fas fa-envelope"></i>
-          </a>
+    <!-- Navbar -->
+    <nav class="bg-white shadow fixed top-0 w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-yellow-600">DBARRYCK</h1>
+            <ul class="flex space-x-4 text-sm font-semibold">
+                <li><a href="#about" class="hover:text-yellow-600">About</a></li>
+                <li><a href="#projects" class="hover:text-yellow-600">Projects</a></li>
+                <li><a href="#skills" class="hover:text-yellow-600">Skills</a></li>
+                <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="pt-24 px-4 py-12 bg-white text-center">
+        <img src="{% static 'main_app/images/barry.jpg' %}" alt="Barry" class="mx-auto w-32 h-32 rounded-full shadow-lg mb-4">
+        <h2 class="text-3xl font-bold text-yellow-600 mb-2">Hello, I’m Barry 👋</h2>
+        <p class="max-w-2xl mx-auto text-gray-700">
+            I’m a passionate Software Engineer specializing in Django and backend development. I enjoy solving real-world problems and building user-friendly web apps.
+        </p>
+        <div class="flex justify-center mt-4 space-x-4 text-2xl text-yellow-600">
+            <a href="https://github.com/yourusername" target="_blank" class="hover:text-gray-800">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-gray-800">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+            </a>
+            <!-- Add more icons if needed -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-100 px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl font-bold text-yellow-600">Projects</h2>
+            <p>Some cool stuff I’ve built recently</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-lg font-semibold mb-2">Library Management System</h3>
+                <p class="text-sm text-gray-600">A full-stack app to manage book checkouts, returns, and users using Django.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-lg font-semibold mb-2">Facebook Clone API</h3>
+                <p class="text-sm text-gray-600">A social media backend built with Django Rest Framework simulating Facebook’s API.</p>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
+
+   
+    <!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-100 text-center">
+  <h3 class="text-3xl font-bold mb-10">Skills</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+    
+    <!-- Skill Card: Python -->
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg shadow">
+      <h4 class="text-xl font-semibold text-yellow-700 mb-2">Python</h4>
+      <p class="text-gray-700">My primary programming language — clean, powerful, and great for backend development and automation.</p>
     </div>
-  </section>
 
-  <!-- Placeholder for Projects -->
-  <section id="projects" class="py-20 bg-gray-50 text-center">
-    <h3 class="text-3xl font-bold mb-10">Projects</h3>
-    <p class="text-gray-600">Your projects will be listed here soon.</p>
-  </section>
+    <!-- Skill Card: Django -->
+    <div class="bg-green-100 border-l-4 border-green-500 p-6 rounded-lg shadow">
+      <h4 class="text-xl font-semibold text-green-700 mb-2">Django</h4>
+      <p class="text-gray-700">My go-to web framework — secure, fast, and perfect for building robust backend systems and APIs.</p>
+    </div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white text-center">
-    <h3 class="text-3xl font-bold mb-6">Let’s Connect</h3>
-    <p class="text-gray-700 max-w-xl mx-auto mb-6">
-      Got a project in mind or want to collaborate? I'm open to freelance opportunities, full-time roles, or just a friendly chat.
-    </p>
-    <a href="mailto:youremail@example.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700">
-      Say Hello
+    <!-- Skill Card: JavaScript -->
+    <div class="bg-blue-100 border-l-4 border-blue-500 p-6 rounded-lg shadow">
+      <h4 class="text-xl font-semibold text-blue-700 mb-2">JavaScript</h4>
+      <p class="text-gray-700">The language that brings websites to life — interactive UI, dynamic elements, and smooth user experience.</p>
+    </div>
+
+    <!-- Skill Card: HTML & CSS -->
+    <div class="bg-pink-100 border-l-4 border-pink-500 p-6 rounded-lg shadow">
+      <h4 class="text-xl font-semibold text-pink-700 mb-2">HTML & CSS</h4>
+      <p class="text-gray-700">The foundation of every website — structured content with clean, modern styling powered by Tailwind CSS.</p>
+    </div>
+
+    <!-- Skill Card: Git & GitHub -->
+    <div class="bg-indigo-100 border-l-4 border-indigo-500 p-6 rounded-lg shadow">
+      <h4 class="text-xl font-semibold text-indigo-700 mb-2">Git & GitHub</h4>
+      <p class="text-gray-700">Version control pro — I use Git and GitHub daily to manage code, collaborate, and keep my projects in sync.</p>
+    </div>
+
+    <!-- Skill Card: MySQL/PostgreSQL -->
+    <div class="bg-teal-100 border-l-4 border-teal-500 p-6 rounded-lg shadow">
+      <h4 class="text-xl font-semibold text-teal-700 mb-2">MySQL / PostgreSQL</h4>
+      <p class="text-gray-700">Experience with relational databases for handling structured data, writing queries, and optimizing performance.</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-white text-center">
+  <h3 class="text-3xl font-bold mb-6">Let’s Connect</h3>
+  <p class="text-gray-700 max-w-xl mx-auto mb-6">
+    Got a project in mind or want to collaborate? I'm open to freelance opportunities, full-time roles, or just a friendly chat.
+  </p>
+
+  <!-- Social Media Icons -->
+  <div class="flex justify-center space-x-6 mb-8 text-gray-600 text-2xl">
+    <a href="https://github.com/yourusername" target="_blank" class="hover:text-yellow-600">
+      <i class="fab fa-github fa-2x"></i>
     </a>
-  </section>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-yellow-600">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://twitter.com/yourusername" target="_blank" class="hover:text-yellow-600">
+      <i class="fab fa-twitter fa-2x"></i>
+    </a>
+  </div>
 
-  <!-- Footer -->
-  <footer class="bg-gray-200 py-6 text-center text-sm text-gray-600">
-    © 2025 Barry Obonyo. All rights reserved.
-  </footer>
+  <!-- Contact Form -->
+  <form action="#" method="POST" class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+    <div class="mb-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+    </div>
+    <div class="mb-4">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+    </div>
+    <div class="mb-4">
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+    </div>
+    <button type="submit" class="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition">
+      Send Message
+    </button>
+  </form>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-yellow-600 text-white text-center py-6">
+        <p>&copy; {{ now.year }} Barry. Built with Django & Tailwind CSS</p>
+    </footer>
 
 </body>
 </html>
