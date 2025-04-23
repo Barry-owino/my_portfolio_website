@@ -1,4 +1,4 @@
-#from django.shortcuts import render
+from django.shortcuts import render
 from django.views.generic import TemplateView
 from rest_framework import generics
 from .models import UserProfile, Project, ContactMessage
@@ -24,4 +24,3 @@ class ProjectDetailView(generics.RetrieveUpdateDestroyAPIView):
 class ContactMessageCreateView(generics.CreateAPIView):
     queryset = ContactMessage.objects.all()
     serializer_class = ContactMessageSerializer
-
