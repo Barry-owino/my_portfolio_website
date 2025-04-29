@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import ContactForm
 from django.views.generic import TemplateView
+from django.views.generic.edit import FormView
+from django.urls import reverse_lazy
 from rest_framework import generics
 from .models import UserProfile, Project, ContactMessage
 from .serializers import UserProfileSerializer, ProjectSerializer, ContactMessageSerializer
@@ -24,3 +27,14 @@ class ProjectDetailView(generics.RetrieveUpdateDestroyAPIView):
 class ContactMessageCreateView(generics.CreateAPIView):
     queryset = ContactMessage.objects.all()
     serializer_class = ContactMessageSerializer
+
+
+#Form validation view
+class ContactView(FormView):
+    template_name = 'base.html'
+    form_class = ContactForm
+    success_url = reverse_lazy('success')
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)

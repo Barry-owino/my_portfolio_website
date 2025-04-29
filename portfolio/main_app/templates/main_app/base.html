@@ -19,8 +19,8 @@
             <h1 class="text-xl font-bold text-yellow-600">DBARRYCK</h1>
             <ul class="flex space-x-4 text-sm font-semibold">
                 <li><a href="#about" class="hover:text-yellow-600">About</a></li>
-                <li><a href="#projects" class="hover:text-yellow-600">Projects</a></li>i
-		<li><a href="#design" class="text-white hover:text-gray-200">Design</a></li>
+		<li><a href="#projects" class="hover:text-yellow-600">Projects</a></li>
+		<li><a href="#design" class="hover:text-yellow-600">Design</a></li>
                 <li><a href="#skills" class="hover:text-yellow-600">Skills</a></li>
                 <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
             </ul>
@@ -83,13 +83,13 @@
 
       <!-- Social Media Icons -->
       <div class="flex justify-center md:justify-start gap-6 text-yellow-600 text-2xl">
-        <a href="https://github.com/yourusername" target="_blank" class="hover:text-gray-800" aria-label="GitHub">
+        <a href="https://github.com/Barry-owino" target="_blank" class="hover:text-gray-800" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-gray-800" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/barry-owino-0334a1231/" target="_blank" class="hover:text-gray-800" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://twitter.com/yourusername" target="_blank" class="hover:text-gray-800" aria-label="Twitter">
+        <a href="https://twitter.com/Barry-owino" target="_blank" class="hover:text-gray-800" aria-label="Twitter">
           <i class="fab fa-twitter"></i>
         </a>
 
@@ -221,21 +221,37 @@
     </a>
   </div>
 
-  <!-- Contact Form -->
-  <form action="#" method="POST" class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
-    <div class="mb-4">
-      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
-    </div>
-    <div class="mb-4">
-      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
-    </div>
-    <div class="mb-4">
-      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
-    </div>
-    <button type="submit" class="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition">
-      Send Message
-    </button>
-  </form>
+<!-- Contact Form -->
+<form action="{% url 'contact' %}" method="POST" class="mx-auto w-full max-w-lg p-6 space-y-4 bg-gray-100 rounded-xl shadow-sm">
+  {% csrf_token %}
+  <h2 class="text-2xl font-bold text-gray-800 text-center">Contact Us</h2>
+
+  <div>
+    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+    <input type="text" id="name" name="name" required
+           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none">
+  </div>
+
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+    <input type="email" id="email" name="email" required
+           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none">
+  </div>
+
+  <div>
+    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+    <textarea id="message" name="message" rows="4" required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"></textarea>
+  </div>
+
+  <button type="submit"
+          class="w-full bg-yellow-500 text-white font-semibold py-2 rounded-lg hover:bg-yellow-600 transition-colors">
+    Send Message
+  </button>
+</form>
+
+
+
 </section>
 
 
@@ -266,20 +282,20 @@
     <div>
       <h4 class="text-xl font-bold mb-3">Connect</h4>
       <div class="flex space-x-5 text-yellow-500 text-2xl">
-        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub" class="hover:text-white">
+        <a href="https://github.com/Barry-owino" target="_blank" aria-label="GitHub" class="hover:text-white">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" class="hover:text-white">
+        <a href="https://www.linkedin.com/in/barry-owino-0334a1231/" target="_blank" aria-label="LinkedIn" class="hover:text-white">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter" class="hover:text-white">
+        <a href="https://twitter.com/@Barry-owino" target="_blank" aria-label="Twitter" class="hover:text-white">
           <i class="fab fa-twitter"></i>
         </a>
         <a href="https://wa.me/254700165002" target="_blank" aria-label="WhatsApp" class="hover:text-white">
           <i class="fab fa-whatsapp"></i>
         </a>
 
-	<a href="https://facebook.com/yourusername" target="_blank" aria-label="Facebook" class="hover:text-white">
+	<a href="https://facebook.com/Barry Owino" target="_blank" aria-label="Facebook" class="hover:text-white">
   <i class="fab fa-facebook"></i>
         </a>
 
@@ -289,7 +305,7 @@
   </div>
 
   <div class="text-center text-gray-500 text-sm mt-8">
-    &copy; 2025 Barry. All rights reserved.
+    &copy; 2025 Barry-owino. All rights reserved.
   </div>
 </footer>
 
