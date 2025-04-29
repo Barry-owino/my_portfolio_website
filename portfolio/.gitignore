@@ -1,0 +1,42 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+
+# === Django ===
+db.sqlite3
+*.log
+media/
+staticfiles/
+local_settings.py
+.env
+
+# === Virtual Environments ===
+env/
+venv/
+myworld/
+
+# === VSCode and IDEs ===
+.vscode/
+.idea/
+
+# === macOS ===
+.DS_Store
+
+# === Coverage reports ===
+.coverage
+htmlcov/
+
+# === Node and frontend (if applicable) ===
+node_modules/
+*.map
+
+# === Heroku specific ===
+*.sqlite3
+
